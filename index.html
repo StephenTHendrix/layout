@@ -23,7 +23,7 @@
   a.text:link, a.text:visited, .fcopy {color: #EE82EE !important;}
   </style>
   </head>
-  <body style="background:url(https://i.pinimg.com/originals/7c/b1/0a/7cb10a81f2a615eea158b6b553f5aabc.jpg); background-attachment:fixed; background-position: bottom left; background-repeat:no-repeat; background-color:#000000 !important;">
+  <body style="background-color:#000000 !important; background-image:url(./profile1/rsz_used.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: bottom left;">
   <div id="headerWrap">
     <div id="header" class="clearfix profileWidth">
       <table cellspacing="0" cellpadding="0" border="0" width="100%" id="headerTable">
@@ -193,9 +193,11 @@
                 </tr>
               </tbody></table>
   <br>
-  <div id="mini" style="width: auto; height:auto;">
+  <div id="mini" style="width: auto; height:auto;" onclick="play()">
     <img src="./profile1/fob-music-player.jpg" border="0" width="295" height="141" alt="">
   </div>
+  <audio id="audio" src="./profile1/fob.mp3"></audio>
+
   
   <br>
               <table cellspacing="0" cellpadding="0" width="300" class="interestsAndDetails">
@@ -535,4 +537,11 @@
       </td>
     </tr>
   </tbody></table>  
+  <script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
   </body></html>
